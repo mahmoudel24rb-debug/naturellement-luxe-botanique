@@ -344,7 +344,7 @@ header.scrolled .burger span { background: var(--texte-principal); }
 .hero-tag {
   display: inline-block; font-family: var(--font-sans); font-size: 0.625rem; font-weight: 600;
   letter-spacing: 0.45em; text-transform: uppercase; color: var(--accent-light);
-  margin-bottom: 2.5rem; opacity: 0; animation: fadeDown 1s var(--ease-out) 0.3s forwards;
+  margin-top: 3rem; margin-bottom: 2.5rem; opacity: 0; animation: fadeDown 1s var(--ease-out) 0.3s forwards;
 }
 .hero h1 {
   color: #fff; font-weight: 500; font-size: clamp(2.5rem, 5vw, 3.25rem);
