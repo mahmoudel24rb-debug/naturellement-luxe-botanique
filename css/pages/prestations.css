@@ -99,9 +99,9 @@
   text-align: center; padding: var(--space-md);
   background: var(--blanc); border-radius: var(--radius-card);
   box-shadow: var(--shadow-sm); transition: var(--transition);
-  border: 1px solid var(--bordure);
+  border: 1px solid var(--bordure-light);
 }
-.inclus-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.inclus-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
 .inclus-icon { font-size: 2.5rem; color: var(--primaire); margin-bottom: var(--space-sm); display: block; }
 .inclus-item h4 { font-family: var(--font-serif); color: var(--texte-principal); margin-bottom: 0.5rem; }
 .inclus-item p { color: var(--texte-secondaire); font-size: var(--text-sm); }
@@ -116,7 +116,7 @@
   gap: var(--space-md); max-width: 1000px; margin: 0 auto;
 }
 .duree-card {
-  background: rgba(247,243,237,0.05); border: 1px solid rgba(74,103,65,0.25);
+  background: rgba(250,248,245,0.05); border: 1px solid rgba(45,90,61,0.25);
   border-radius: var(--radius-card); overflow: hidden;
   transition: var(--transition); text-align: center;
 }
@@ -200,15 +200,15 @@
 .session-item {
   display: flex; align-items: center; gap: var(--space-md);
   padding: var(--space-sm) 0;
-  border-bottom: 1px solid rgba(74,103,65,0.15);
+  border-bottom: 1px solid rgba(45,90,61,0.15);
   transition: var(--transition);
 }
 .session-item:hover { padding-left: var(--space-xs); }
 .session-date {
   flex-shrink: 0; min-width: 80px; text-align: center;
   padding: var(--space-xs) var(--space-sm);
-  background: rgba(74,103,65,0.08);
-  border: 1px solid rgba(74,103,65,0.2); border-radius: var(--radius-sm);
+  background: rgba(45,90,61,0.08);
+  border: 1px solid rgba(45,90,61,0.2); border-radius: var(--radius-sm);
 }
 .session-day { display: block; font-family: var(--font-heading); font-size: var(--text-2xl); color: var(--primaire); line-height: 1; font-style: italic; }
 .session-month { display: block; font-family: var(--font-sans); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 2px; color: var(--bordure); margin-top: 2px; }
@@ -259,8 +259,8 @@
 .form-contact {
   max-width: 700px; margin: 0 auto;
   padding: var(--space-lg) var(--space-md);
-  background: rgba(247,243,237,0.05);
-  border: 1px solid rgba(74,103,65,0.2); border-radius: var(--radius-card);
+  background: rgba(250,248,245,0.05);
+  border: 1px solid rgba(45,90,61,0.2); border-radius: var(--radius-card);
 }
 .form-contact h3 { font-family: var(--font-heading); font-size: var(--text-2xl); color: var(--fond-principal); text-align: center; margin-bottom: var(--space-md); }
 

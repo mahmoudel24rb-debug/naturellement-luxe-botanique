@@ -19,7 +19,7 @@
 .checkbox-group label a { color: var(--primaire); text-decoration: underline; text-underline-offset: 2px; }
 
 /* ---- Contact Info ---- */
-.contact-info { background: var(--fond-sombre); border: 1px solid rgba(74,103,65,0.25); border-radius: var(--radius-card); padding: var(--space-lg) var(--space-md); }
+.contact-info { background: var(--fond-sombre); border: 1px solid rgba(45,90,61,0.25); border-radius: var(--radius-card); padding: var(--space-lg) var(--space-md); }
 .contact-info h3 { font-family: var(--font-heading); font-size: clamp(1.3rem, 2vw, 1.6rem); color: var(--fond-principal); }
 .info-item { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: var(--space-md); }
 .info-item:last-child { margin-bottom: 0; }
