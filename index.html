@@ -17,8 +17,25 @@
   <a href="index.html" class="header-logo">Naturellement <span>Luxe</span></a>
   <nav>
     <ul class="header-nav">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="prestations.html">Prestations</a></li>
+      <li><a href="index.html">Concept</a></li>
+      <li class="has-dropdown">
+        <a href="prestations.html">Prestations</a>
+        <ul class="dropdown">
+          <li><a href="prestation-spa.html">Spa Privatif</a></li>
+          <li><a href="prestation-massage.html">Massage</a></li>
+          <li><a href="prestation-cours.html">Cours</a></li>
+          <li><a href="prestation-loveroom.html">Love Room</a></li>
+          <li class="has-dropdown-nested">
+            <a href="prestation-events.html">Events</a>
+            <ul class="dropdown-nested">
+              <li><a href="#">EVJF</a></li>
+              <li><a href="#">Baby Shower</a></li>
+              <li><a href="#">Anniv</a></li>
+              <li><a href="#">St Valentin</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
       <li><a href="tarifs.html">Tarifs</a></li>
       <li><a href="carte-cadeau.html">Carte Cadeau</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -56,7 +73,7 @@
       <p class="hero-subtitle">Une parenthèse d'exception, rien que pour vous<br>Historiquement le premier Spa Privatif de Paris</p>
       <div class="hero-buttons">
         <a href="reserver.html" class="btn btn-primary">Réserver</a>
-        <a href="prestations.html" class="btn btn-outline">Découvrir</a>
+        <a href="prestations.html" class="btn btn-outline-white">Découvrir</a>
       </div>
       <div class="hero-price">
         <span class="price-from">Dès</span>
@@ -118,13 +135,6 @@
       </svg>
     </div>
   </section>
-
-  <!-- Wave: concept → équipements -->
-  <div class="wave-divider">
-    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
-      <path d="M0,40 C360,100 720,0 1080,60 C1260,80 1380,20 1440,40 L1440,100 L0,100 Z" fill="#1A1A17"/>
-    </svg>
-  </div>
 
   <!-- ÉQUIPEMENTS (fond SOMBRE — cards arrondies) -->
   <section class="section-equipements">
@@ -297,7 +307,7 @@
         <span class="section-label">Offrir</span>
         <h2>Offrez une <em>Expérience Unique</em></h2>
         <p>Valable 12 mois, glissée dans une belle petite enveloppe pour un cadeau d'exception.</p>
-        <a href="carte-cadeau.html" class="btn btn-primary">Offrir une carte cadeau</a>
+        <a href="carte-cadeau.html" class="btn btn-primary" style="width:auto; align-self:flex-start">Offrir une carte cadeau</a>
       </div>
     </div>
   </section>
