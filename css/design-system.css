@@ -149,8 +149,11 @@ ul, ol { list-style: none; }
 [data-speed] { will-change: transform; }
 
 /* ---- Wave Dividers ---- */
-.wave-divider { line-height: 0; overflow: hidden; position: relative; z-index: 2; }
+.wave-divider { line-height: 0; overflow: hidden; position: relative; z-index: 2; margin-bottom: -2px; }
 .wave-divider svg { display: block; width: 100%; height: auto; }
+.wave-divider + section,
+.wave-divider + footer,
+.wave-divider + .section-equipements { position: relative; z-index: 1; }
 .wave-divider-flip { transform: scaleY(-1); }
 
 /* ---- Botanical Decorations ---- */
