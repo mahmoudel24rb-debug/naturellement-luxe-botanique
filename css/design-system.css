@@ -1,25 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;700&display=swap');
 
 /* ============================================
-   DESIGN SYSTEM — Naturellement Luxe
-   Palette unique, reset, typo, reveal
+   DESIGN SYSTEM — Naturellement Luxe Botanique
+   Palette organique, reset, typo, reveal
    ============================================ */
 
 :root {
-  /* Palette — UNE SEULE, pas d'alias */
-  --noir:    #111110;
-  --charbon: #1A1918;
-  --bronze:  #6B5A4C;
-  --chene:   #C7A77C;
-  --miel:    #D4A15A;
-  --sable:   #D6C2A6;
-  --creme:   #F1E7D6;
-  --craie:   #F6F3EE;
-  --blanc:   #FFFFFF;
+  /* Palette botanique */
+  --fond-principal:    #F7F3ED;
+  --fond-secondaire:   #EDE7DC;
+  --primaire:          #4A6741;
+  --secondaire:        #C17C4E;
+  --accent:            #D4A574;
+  --texte-principal:   #2C2418;
+  --texte-secondaire:  #6B5D4F;
+  --fond-sombre:       #2C2418;
+  --bordure:           #C8BBA8;
+  --hover:             #5C7D52;
+  --blanc:             #FFFFFF;
+
+  /* Anciens alias pour compatibilite interne */
+  --noir:    #2C2418;
+  --charbon: #352E22;
+  --bronze:  #6B5D4F;
+  --chene:   #4A6741;
+  --miel:    #D4A574;
+  --sable:   #C8BBA8;
+  --creme:   #F7F3ED;
+  --craie:   #F7F3ED;
 
   /* Typo */
-  --font-serif: 'Cormorant Garamond', Georgia, serif;
-  --font-sans:  'Montserrat', sans-serif;
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-serif:   'Cormorant Garamond', Georgia, serif;
+  --font-sans:    'DM Sans', sans-serif;
 
   /* Tailles */
   --text-xs:   0.6875rem;
@@ -40,30 +53,24 @@
   --space-xl:  7rem;
   --space-2xl: 10rem;
 
-  /* Rayons */
-  --radius-sm:  8px;
-  --radius-md:  16px;
-  --radius-lg:  24px;
-  --radius-xl:  40px;
-  --radius-pill: 30px;
+  /* Rayons — style organique arrondi */
+  --radius-sm:   12px;
+  --radius-md:   20px;
+  --radius-lg:   24px;
+  --radius-xl:   40px;
+  --radius-pill:  50px;
+  --radius-card:  24px;
 
-  /* Formes organiques */
-  --radius-organic-hero: 0px 0px 200px 0px;
-  --radius-organic-section: 200px 200px 200px 0px;
-  --radius-organic-hero-sub: 100px 100px 0px 100px;
-  --radius-card: 20px;
-  --radius-glass: 90px 0px 0px 0px;
-
-  /* Glassmorphism */
-  --glass-bg: rgba(241, 231, 214, 0.58);
+  /* Glassmorphism botanique */
+  --glass-bg: rgba(247, 243, 237, 0.65);
   --glass-border: 2px solid rgba(255, 255, 255, 0.5);
   --glass-blur: 12px;
 
-  /* Ombres */
-  --shadow-sm:   0 4px 20px rgba(22,22,22,0.08);
-  --shadow-md:   0 8px 40px rgba(22,22,22,0.12);
-  --shadow-lg:   0 20px 60px rgba(22,22,22,0.18);
-  --shadow-glow: 0 0 40px rgba(199,167,124,0.12);
+  /* Ombres douces et chaudes */
+  --shadow-sm:   0 4px 20px rgba(44, 36, 24, 0.06);
+  --shadow-md:   0 8px 32px rgba(44, 36, 24, 0.08);
+  --shadow-lg:   0 20px 60px rgba(44, 36, 24, 0.12);
+  --shadow-glow: 0 0 40px rgba(74, 103, 65, 0.12);
 
   /* Transitions */
   --ease-out: cubic-bezier(0.4, 0, 0.2, 1);
@@ -77,26 +84,27 @@ html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
 body {
   font-family: var(--font-sans);
   font-size: var(--text-base);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.8;
-  background: var(--creme);
-  color: var(--bronze);
+  background: var(--fond-principal);
+  color: var(--texte-secondaire);
   overflow-x: hidden;
 }
-h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 300; line-height: 1.15; }
-h1 em, h2 em { font-style: italic; color: var(--chene); }
+h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 400; line-height: 1.15; }
+h1, h2, h3 { font-style: italic; }
+h1 em, h2 em { font-style: italic; color: var(--primaire); }
 h1 { font-size: var(--text-hero); }
 h2 { font-size: var(--text-3xl); }
 h3 { font-size: var(--text-2xl); }
-p { line-height: 1.85; font-weight: 300; }
+p { line-height: 1.85; font-weight: 400; }
 a { text-decoration: none; color: inherit; transition: var(--transition); }
 img { max-width: 100%; display: block; }
 ul, ol { list-style: none; }
 
-::selection { background: var(--chene); color: var(--noir); }
+::selection { background: var(--primaire); color: var(--fond-principal); }
 ::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: var(--noir); }
-::-webkit-scrollbar-thumb { background: var(--chene); border-radius: 3px; }
+::-webkit-scrollbar-track { background: var(--fond-sombre); }
+::-webkit-scrollbar-thumb { background: var(--primaire); border-radius: 3px; }
 
 /* ---- Reveal animations ---- */
 .reveal     { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s var(--ease-out); }
@@ -111,8 +119,22 @@ ul, ol { list-style: none; }
 .reveal-delay-4 { transition-delay: 0.4s; }
 .reveal-delay-5 { transition-delay: 0.5s; }
 
-/* Parallax — aucune transition CSS */
+/* Parallax */
 [data-speed] { will-change: transform; }
+
+/* ---- Wave Dividers ---- */
+.wave-divider { line-height: 0; overflow: hidden; position: relative; z-index: 2; }
+.wave-divider svg { display: block; width: 100%; height: auto; }
+.wave-divider-flip { transform: scaleY(-1); }
+
+/* ---- Botanical Decorations ---- */
+.botanical-deco {
+  position: absolute;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
+.botanical-deco svg { width: 100%; height: 100%; }
 
 /* ---- Keyframes ---- */
 @keyframes fadeUp { from { opacity: 0; transform: translateY(25px); } to { opacity: 1; transform: translateY(0); } }
